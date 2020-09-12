@@ -5,20 +5,28 @@ Created on Sun Aug 16 12:20:22 2020
 @author: kisch
 """
 
-import numpy as np
+from p22_imp import import_names_sorted
+from name_value import NameValue as NV
+
 
 
 problem_number = 22
 
 
 print("Calculation started")
+names = import_names_sorted()
 
-
-names = np.loadtxt()
-
-
+nv = NV()
 
 the_answer = 0
+ind = 1
+
+for name in names:
+    the_answer += ind * nv.word_value(name)
+    
+    ind += 1
+    
+
 
 print("The answer to the " + str(problem_number) + "th problem of ProjectEuler.Net is:",the_answer)
 

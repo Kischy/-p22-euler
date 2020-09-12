@@ -6,16 +6,24 @@ Created on Sun Aug 16 12:20:22 2020
 """
 
 import unittest
-
+from name_value import NameValue as NV
 
 
 class TestSomething(unittest.TestCase):  
     
-    def setUp(self):
-        pass
+    def test_word_value(self):  
+        nv = NV()
         
-    def test_get_last_digit(self):     
-        self.assertEqual(1,1)
+        self.assertEqual(nv.word_value("COLIN"),53)
+
+
+        
+    def test_letter_value(self):  
+        nv = NV()
+        
+        self.assertEqual(nv.__letter_value__("A"),1)
+        self.assertEqual(nv.__letter_value__("C"),3)
+        self.assertEqual(nv.__letter_value__("O"),15)
         
         
 

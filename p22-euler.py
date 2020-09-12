@@ -5,6 +5,7 @@ Created on Sun Aug 16 12:20:22 2020
 @author: kisch
 """
 
+import numpy as np
 
 
 problem_number = 22
@@ -12,6 +13,8 @@ problem_number = 22
 
 print("Calculation started")
 
+
+names = np.loadtxt()
 
 
 
